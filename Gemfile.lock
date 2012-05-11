@@ -1,0 +1,29 @@
+GIT
+  remote: https://github.com/freerange/free_agent.git
+  revision: 57e767cbdc715029617f2faa6d5496c1abbb7a22
+  specs:
+    free_agent (0.1.0)
+      activesupport
+      crack
+      hashie
+      rest-client
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activesupport (3.2.3)
+      i18n (~> 0.6)
+      multi_json (~> 1.0)
+    crack (0.3.1)
+    hashie (1.2.0)
+    i18n (0.6.0)
+    mime-types (1.18)
+    multi_json (1.3.4)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  free_agent!
