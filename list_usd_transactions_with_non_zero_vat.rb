@@ -5,8 +5,7 @@ require "yaml"
 require "free_agent"
 
 successful = true
-config = YAML.load(File.open("config.yml"))
-FreeRange = FreeAgent::Company.new(config[:domain], config[:username], config[:password])
+FreeRange = FreeAgent::Company.new(ENV["FA_DOMAIN"], ENV["FA_USERNAME"], ENV["FA_PASSWORD"])
 FreeRange.bank_accounts.each do |account|
   FreeRange.bank_transactions(account.id, :from => Date.parse("2010-10-31"), :to => Date.today).each do |transaction|
     if %r{USD|\$}.match(transaction.name)
