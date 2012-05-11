@@ -18,3 +18,11 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
+#
+set :output, "~/app/cron_log.log"
+
+env :MAILTO, 'chris.roos@gofreerange.com'
+
+every 3.minutes do
+  command 'cd ~/app && bundle exec ruby list_usd_transactions_with_non_zero_vat.rb'
+end
