@@ -1,9 +1,3 @@
-* Deploy to gofreerange.com
-
-* Run the task at 10:30, 14:30 and 16:30 to mirror what we were doing with Jenkins.
-
-* Why isn't existing cron job working every minute?  Or is it and I'm just not seeing any output?
+* Use the mail command line utility rather than have cron email us - this should allow for friendly email subjects
 
 * How to use recap and rbenv?
-
-* Ensure we get emailed when the script 'fails'.
