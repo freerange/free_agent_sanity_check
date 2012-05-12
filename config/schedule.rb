@@ -20,8 +20,8 @@
 # Learn more: http://github.com/javan/whenever
 #
 env :PATH, '/usr/local/bin:/usr/bin:/bin'
-env :MAILTO, 'chris.roos@gofreerange.com'
+env :MAILTO, 'everyone@gofreerange.com'
 
-every 3.minutes do
+every '30 10,14,18 * * *' do
   command 'cd ~/app && bundle exec ruby list_usd_transactions_with_non_zero_vat.rb'
 end

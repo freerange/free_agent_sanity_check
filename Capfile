@@ -3,7 +3,7 @@ require 'recap/recipes/ruby'
 set :application, 'free_agent_sanity_check'
 set :repository, 'https://github.com/freerange/free_agent_sanity_check'
 
-server 'localhost', :app
+server 'gofreerange.com', :app
 
 set :whenever_command, "bundle exec whenever"
 set(:whenever_identifier)   { application }
