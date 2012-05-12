@@ -19,8 +19,7 @@
 
 # Learn more: http://github.com/javan/whenever
 #
-set :output, "~/app/cron_log.log"
-
+env :PATH, '/usr/local/bin:/usr/bin:/bin'
 env :MAILTO, 'chris.roos@gofreerange.com'
 
 every 3.minutes do
