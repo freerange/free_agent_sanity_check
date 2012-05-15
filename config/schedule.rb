@@ -23,5 +23,6 @@ env :PATH, '/usr/local/bin:/usr/bin:/bin'
 env :MAILTO, 'everyone@gofreerange.com'
 
 every '30 10,14,18 * * *' do
-  command 'cd ~/app && bundle exec ruby list_usd_transactions_with_non_zero_vat.rb'
+  # Write the script output to a file and then, if the file has a size greater than 0, mail the content of the file to everyone
+  command 'cd ~/app && rm -f tmp-script-output && bundle exec ruby list_usd_transactions_with_non_zero_vat.rb > tmp-script-output 2>&1; if [ -s tmp-script-output ]; then cat tmp-script-output | mail -s "FreeAgent Sanity check failed" everyone@gofreerange.com; fi'
 end
