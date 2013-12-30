@@ -1,3 +1,9 @@
 This uses the [Free Agent wrapper](https://github.com/freerange/free_agent) to check for bank transactions in US Dollars that have incorrectly had VAT added.
 
-I'm hoping that this 'app' will replace our current use of Jenkins to regularly run the list_usd_transactions_with_non_zero_vat example script.
+## Credits
+
+Free Agent Sanity Check was written by [James Mead](http://jamesmead.org) and the other members of [Go Free Range](http://gofreerange.com).
+
+## License
+
+Free Agent Sanity Check is released under the [MIT License](https://github.com/freerange/free_agent_sanity_check/blob/master/LICENSE).
