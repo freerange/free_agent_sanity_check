@@ -2,7 +2,7 @@ This uses the [Free Agent wrapper](https://github.com/freerange/free_agent) to c
 
 ## Credits
 
-Free Agent Sanity Check was written by [James Mead](http://jamesmead.org) and the other members of [Go Free Range](http://gofreerange.com).
+Free Agent Sanity Check was written by [James Mead](http://jamesmead.org), [Chris Roos](http://chrisroos.co.uk) and the other members of [Go Free Range](http://gofreerange.com).
 
 ## License
 
