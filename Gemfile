@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem "free_agent", :git => "https://github.com/freerange/free_agent.git"
 
