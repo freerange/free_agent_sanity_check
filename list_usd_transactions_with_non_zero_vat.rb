@@ -1,6 +1,9 @@
 require "rubygems"
 require "bundler/setup"
 
+require "dotenv"
+Dotenv.load
+
 require "yaml"
 require "free_agent"
 
