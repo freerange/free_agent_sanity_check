@@ -1,3 +1,0 @@
-* Use the mail command line utility rather than have cron email us - this should allow for friendly email subjects
-
-* How to use recap and rbenv?
